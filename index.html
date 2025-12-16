@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Fitness & Diet Planner — 2026</title>
+
+  <!-- Optional Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <span class="logo">FitAI</span>
+        <span class="tag">Smart Fitness & Diet Planner</span>
+      </div>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#planner">Planner</a>
+        <a href="#progress">Progress</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="cta">
+        <a href="#planner" class="btn btn-primary">Start Free</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <h1>Personalized AI Fitness & Diet Planner</h1>
+        <p class="lead">
+          Adaptive workouts, AI meal recommendations, and visual progress tracking — designed for busy people in 2026.
+        </p>
+
+        <ul class="hero-features">
+          <li>AI-driven meal plans</li>
+          <li>Adaptive workouts by goal</li>
+          <li>Macro tracking & weekly summaries</li>
+        </ul>
+
+        <div class="hero-actions">
+          <a href="#planner" class="btn btn-primary">Create Plan</a>
+          <a href="#features" class="btn btn-ghost">See Features</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="card-preview">
+          <div class="stat">
+            <h3>Weekly Goal</h3>
+            <p>Lose 0.5 kg • 4 workouts</p>
+          </div>
+
+          <div class="small-grid">
+            <div class="mini-card">
+              <strong>Calories</strong>
+              <span>1,850 kcal</span>
+            </div>
+            <div class="mini-card">
+              <strong>Protein</strong>
+              <span>120 g</span>
+            </div>
+            <div class="mini-card">
+              <strong>Next Workout</strong>
+              <span>HIIT — 30m</span>
+            </div>
+            <div class="mini-card">
+              <strong>Meal</strong>
+              <span>Grilled Salmon Bowl</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="section">
+    <div class="container">
+      <h2 class="section-title">What the AI does for you</h2>
+      <div class="features-grid">
+        <article class="feature">
+          <h3>Personalized Meal Plans</h3>
+          <p>Macros calculated to your goals, allergies and food preferences — weekly rotating menus.</p>
+        </article>
+
+        <article class="feature">
+          <h3>Adaptive Workout Builder</h3>
+          <p>Workouts scale automatically based on recent performance and recovery status.</p>
+        </article>
+
+        <article class="feature">
+          <h3>Smart Grocery Lists</h3>
+          <p>Auto-generated shopping lists grouped by store section to save time and money.</p>
+        </article>
+
+        <article class="feature">
+          <h3>Progress Forecasts</h3>
+          <p>Projected progress graphs and week-by-week milestones (UI preview only).</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANNER (CSS-only tab interface) -->
+  <section id="planner" class="section dark-section">
+    <div class="container">
+      <h2 class="section-title">Planner (Preview)</h2>
+
+      <!-- tabs using radio buttons (CSS only) -->
+      <div class="tabs">
+        <input type="radio" name="tab" id="tab-work" checked>
+        <label for="tab-work" class="tab-label">Workout Planner</label>
+
+        <input type="radio" name="tab" id="tab-meal">
+        <label for="tab-meal" class="tab-label">Meal Planner</label>
+
+        <input type="radio" name="tab" id="tab-grocery">
+        <label for="tab-grocery" class="tab-label">Grocery List</label>
+
+        <div class="tab-panels">
+          <div class="panel panel-work">
+            <h3>Weekly Workout Split</h3>
+            <ul class="plan-list">
+              <li><strong>Mon:</strong> Upper Body Strength — 45m</li>
+              <li><strong>Tue:</strong> Cardio HIIT — 30m</li>
+              <li><strong>Wed:</strong> Rest / Mobility</li>
+              <li><strong>Thu:</strong> Lower Body Strength — 50m</li>
+              <li><strong>Fri:</strong> Full Body Circuit — 40m</li>
+              <li><strong>Sat:</strong> Optional Light Cardio</li>
+              <li><strong>Sun:</strong> Recovery + Stretching</li>
+            </ul>
+
+            <div class="cards-row">
+              <div class="exercise-card">
+                <h4>Upper Body — Sample</h4>
+                <p>Bench Press • 4x8 | Pull-ups • 3xMax | Shoulder Press • 3x10</p>
+              </div>
+              <div class="exercise-card">
+                <h4>HIIT — Sample</h4>
+                <p>8 rounds: 30s sprint / 30s rest • 12 min cooldown</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-meal">
+            <h3>AI Meal Plan (Day)</h3>
+            <div class="meal-day">
+              <div class="meal">
+                <strong>Breakfast</strong>
+                <p>Oats + Whey + Berries — 420 kcal</p>
+              </div>
+              <div class="meal">
+                <strong>Lunch</strong>
+                <p>Grilled Chicken Salad with Quinoa — 600 kcal</p>
+              </div>
+              <div class="meal">
+                <strong>Snack</strong>
+                <p>Greek Yogurt + Nuts — 250 kcal</p>
+              </div>
+              <div class="meal">
+                <strong>Dinner</strong>
+                <p>Salmon, Sweet Potato, Broccoli — 580 kcal</p>
+              </div>
+              <p class="meal-total">Daily Total: <strong>1,850 kcal</strong></p>
+            </div>
+          </div>
+
+          <div class="panel panel-grocery">
+            <h3>Grocery List (Auto-generated)</h3>
+            <ul class="grocery-list">
+              <li>Rolled Oats — 1kg</li>
+              <li>Quinoa — 500g</li>
+              <li>Chicken Breast — 2 kg</li>
+              <li>Fresh Salmon — 1 kg</li>
+              <li>Broccoli, Spinach, Mixed Berries</li>
+              <li>Greek Yogurt, Almonds</li>
+            </ul>
+            <p class="hint">Grouped by aisle when using the full product.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRESS (static chart made with CSS bars) -->
+  <section id="progress" class="section">
+    <div class="container">
+      <h2 class="section-title">Progress Preview</h2>
+
+      <div class="progress-area">
+        <div class="progress-left">
+          <h3>This Month</h3>
+          <div class="progress-bars">
+            <div class="bar">
+              <span class="bar-label">Weight</span>
+              <div class="bar-track"><div class="bar-fill w-70"></div></div>
+              <span class="bar-value">–3.2 kg</span>
+            </div>
+
+            <div class="bar">
+              <span class="bar-label">Strength</span>
+              <div class="bar-track"><div class="bar-fill w-55"></div></div>
+              <span class="bar-value">+12%</span>
+            </div>
+
+            <div class="bar">
+              <span class="bar-label">Cardio</span>
+              <div class="bar-track"><div class="bar-fill w-80"></div></div>
+              <span class="bar-value">+20%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="progress-right">
+          <h3>Weekly Overview</h3>
+          <div class="week-spark">
+            <!-- 7 vertical bars -->
+            <div class="spark"><span class="s s6"></span><small>Mon</small></div>
+            <div class="spark"><span class="s s4"></span><small>Tue</small></div>
+            <div class="spark"><span class="s s5"></span><small>Wed</small></div>
+            <div class="spark"><span class="s s3"></span><small>Thu</small></div>
+            <div class="spark"><span class="s s7"></span><small>Fri</small></div>
+            <div class="spark"><span class="s s2"></span><small>Sat</small></div>
+            <div class="spark"><span class="s s1"></span><small>Sun</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section dark-section">
+    <div class="container">
+      <h2 class="section-title">What users say</h2>
+      <div class="testimonials">
+        <blockquote>
+          <p>“I lost 5 kg in 8 weeks — the meal plans are realistic and tasty.”</p>
+          <cite>— Ananya R.</cite>
+        </blockquote>
+
+        <blockquote>
+          <p>“Workouts adapt when I'm tired. The planner really keeps me consistent.”</p>
+          <cite>— Rohit K.</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA + FOOTER -->
+  <section class="section cta-section">
+    <div class="container cta-inner">
+      <div>
+        <h2>Ready to build your AI-driven plan?</h2>
+        <p>Free preview — no signup. Integrates with wearables in the full app.</p>
+      </div>
+      <div>
+        <a href="#planner" class="btn btn-primary large">Create Your Plan</a>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>FitAI</strong>
+        <p class="muted">Smart Fitness & Diet Planner • 2026</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#features">Features</a>
+        <a href="#planner">Planner</a>
+        <a href="#progress">Progress</a>
+      </div>
+
+      <div>
+        <p class="muted">© <span id="yr">2026</span> FitAI</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
